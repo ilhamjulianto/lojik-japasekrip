@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Logic</title>
+</head>
+
+<style>
+body{
+	background-color: #d4080b;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='64.1' stroke-opacity='0.07' %3E%3Ccircle fill='%23d4080b' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23cc0019' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23c40022' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ba0029' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23b0002f' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23a50033' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%239a0036' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%238e0039' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%2382003a' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%2376003b' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%236a043a' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%235d0a39' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23510e36' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23461033' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%233a112f' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23301129' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23261023' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%231d0d1d' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+}
+</style>
+
+<body style="text-align: center;">
+	
+</body>
+
+<script>
+
+// Logic 1
+		// Logic1.1
+			document.write("-----------------------------<br>");
+			document.write("&nbsp; Logic 1.1<br>");
+			document.write("-----------------------------<br>");
+			for( var i = 0; i < 10; i++ ) {
+				for( var j = 0; j < 10; j++ ) {
+					if (j == i) {
+						document.write("* ");
+					} else {
+						document.write("-&nbsp;");
+					}
+				}
+				document.write("<br>");
+			}	
+
+		// Logic 1.2
+			document.write("-----------------------------<br>");
+			document.write("&nbsp; Logic 1.2<br>");
+			document.write("-----------------------------<br>");
+			for( var a = 0; a < 10; a++ ) {
+				for( var b = 0; b < 10; b++ ) {
+					if(b == 10 - (a + 1)) {
+						document.write("*  ");
+					} else {
+						document.write("-&nbsp;");
+					}
+				}
+				document.write("<br>");
+			}
+
+		// Logic 1.3
+			document.write("-----------------------------<br>");
+			document.write("&nbsp; Logic 1.3<br>");
+			document.write("-----------------------------<br>");
+			var range = 10;
+			if( range % 2 == 0 ) {
+				range = range - 1;
+			} else {
+				range = range - 0
+			}
+			
+			for( var y = 0; y < range; y++ ) {
+				for( var x = 0; x < range; x++ ) {
+					if( x == y || x == range - (y + 1) ) {
+						document.write("* ")
+					} else {
+						document.write("-&nbsp;")
+					}
+				}
+				document.write("<br>")
+			}
+
+		// Logic 1.4
+			document.write("-----------------------------<br>");
+			document.write("&nbsp; Logic 1.4<br>");
+			document.write("-----------------------------<br>");
+			var range = 9;
+			if( range % 2 == 0 ) {
+
+			}
+
+			for( var y = 0; y < range; y++ ) {
+				for( var x = 0; x < range; x++ ) {
+					if( y == x || y == 4 ) {
+						document.write("* ")
+					} else if( y == range - (x + 1) || x == 4 ) {
+						document.write("* ")
+					} else {
+						document.write("_ ")
+					}
+				}
+				document.write("<br>")
+			}
+
+		// Logic 1.5
+			document.write("-----------------------------<br>");
+			document.write("&nbsp; Logic 1.5<br>");
+			document.write("-----------------------------<br>");
+			var range = 9;
+
+			for( var y = 0; y < range; y++ ) {
+				for( var x = 0; x < range; x++ ) {
+					if( y >= x ) {
+						document.write("* ");
+					} else {
+						document.write("_ ")
+					}
+				}
+				document.write("<br>")
+			}
+
+		// Logic 1.6
+			document.write("-----------------------------<br>");
+			document.write("&nbsp; Logic 1.6<br>");
+			document.write("-----------------------------<br>");
+			var range = 9
+
+			for( var y = 0; y < range; y++ ) {
+				for( var x = 0; x < range; x++ ) {
+					if( y >= range - (x + 1) ) {
+						document.write("* ")
+					} else {
+						document.write("_ ")
+					}
+				}
+				document.write("<br>")
+			}
+
+		// Logic 1.7
+			document.write("-----------------------------<br>");
+			document.write("&nbsp; Logic 1.7<br>");
+			document.write("-----------------------------<br>");
+			var range = 9;
+
+			for( y = 0; y < range; y++ ) {
+				for( x = 0; x < range; x++ ) {
+					if( y <= x && y <= range - (x + 1) ) {
+						document.write("* ")
+					} else if( y >= x && y >= range - (x + 1) ) {
+						document.write("* ")
+					} else {
+						document.write("_ ")
+					}
+				}
+				document.write("<br>")
+			}
+
+		// Logic 1.8
+			document.write("-----------------------------<br>");
+			document.write("&nbsp; Logic 1.8<br>");
+			document.write("-----------------------------<br>");
+			var range = 9;
+
+			for( var y = 0; y < range; y++ ) {
+				for( var x = 0; x < range; x++ ) {
+					if( y >= range - (x + 1) && y <= x ) {
+						document.write("* ")
+					} else if( y <= range - (x + 1) && y >= x ) {
+						document.write("* ")
+					} else {
+						document.write("_ ")
+					}
+				}
+				document.write("<br>")
+			}
+			document.write("<br><br><br><br>")
+
+// Logic 2
+		// Logic 2.1
+			document.write("-----------------------------<br>");
+			document.write("&nbsp; Logic 2.1<br>");
+			document.write("-----------------------------<br>");
+			function gjl(a) {
+				return a * 2 + 1;
+			}
+			var range = 9;
+
+			for( var y = 1; y < range; y++ ) {
+				for( var x = 1; x < range; x++ ) {
+					if( y == x ) {
+						document.write(gjl(y))
+					} else {
+						document.write("_ ")
+					}
+				}
+				document.write("<br>")
+			}
+		// Logic 2.2
+			document.write("-----------------------------<br>");
+			document.write("&nbsp; Logic 2.2<br>");
+			document.write("-----------------------------<br>");
+			function gnp(a) {
+				return a * 2
+			}
+			var range = 9;
+
+			for( var y = 0; y < range; y++ ) {
+				for( var x = 0; x < range; x++ ) {
+					if( y == range - (x + 1) ) {
+						document.write(gnp(x))
+					} else {
+						document.write("_ ")
+					}
+				}
+				document.write("<br>")
+			}
+		// Logic 2.3
+			document.write("-----------------------------<br>");
+			document.write("&nbsp; Logic 2.3<br>");
+			document.write("-----------------------------<br>");
+			var isi;
+			var range = 9;
+			if( range % 2 == 0 ) {
+				range = range - 1
+			} else {
+				range = range
+			}
+
+			for( var y = 0; y < range; y++ ) {
+				for( var x = 0; x < range; x++ ) {
+					if( y == x ) {
+						isi = [y]
+						document.write(gjl(isi))
+					} else if ( y == range - (x + 1) ) {
+						isi = [x]
+						document.write(gnp(isi))
+					} else {
+						document.write("_ ")
+					}
+				}
+				document.write("<br>")
+			}
+		// Logic 2.4
+			document.write("-----------------------------<br>");
+			document.write("&nbsp; Logic 2.4<br>");
+			document.write("-----------------------------<br>");
+			var isi;
+			var range = 9;
+			if( range % 2 == 0 ) {
+				range = range - 1
+			} else {
+				range = range
+			}
+
+			for( var y = 0; y < range; y++ ) {
+				for( var x = 0; x < range; x++ ) {
+					if( y == x || x == 4 ) {
+						isi = [y];
+						document.write(gjl(isi))
+					} else if( y == range - (x + 1) || y == 4 ) {
+						isi = [x]
+						document.write(gnp(isi))
+					} else {
+						document.write("_ ")
+					}
+				}
+				document.write("<br>")
+			}
+		// Logic 2.5
+			document.write("-----------------------------<br>");
+			document.write("&nbsp; Logic 2.5<br>");
+			document.write("-----------------------------<br>");
+			var isi;
+			var range = 9;
+
+			for( var y = 0; y < range; y++ ) {
+				for( var x = 0; x < range; x++ ) {
+					if( y >= x ) {
+						isi = [x];
+						document.write(gjl(isi));
+					} else {
+						document.write("_ ")
+					}
+				}
+				document.write("<br>")
+			}
+		// Logic 2.6
+			document.write("-----------------------------<br>");
+			document.write("&nbsp; Logic 2.6<br>");
+			document.write("-----------------------------<br>");
+			var isi;
+			var range = 9;
+
+			document.write("<table align='center' border='1px' cellspacing='1' cellpadding='5'>");
+			for( var y = 0; y < range; y++ ) {
+				document.write("<tr>")
+				for( var x = 0; x < range; x++ ) {
+					document.write("<td>")
+					if( y >= range - ( x + 1 ) ) {
+						var z = range - (y + 1);
+						isi = [z];
+						document.write(gnp(isi));
+					} else {
+						document.write("  ")
+					}
+					document.write("</td>")
+				}
+				document.write("</tr>")
+			}
+			document.write("</table>")
+		// Logic 2.7
+			document.write("-----------------------------<br>");
+			document.write("&nbsp; Logic 2.7<br>");
+			document.write("-----------------------------<br>");
+			var isi;
+			var range = 9;
+
+			document.write("<table align='center' border='1px' cellspacing='1' cellpadding='5'>");
+			for( var y = 0; y < range; y++ ) {
+				document.write("<tr>")
+				for( var x = 0; x < range; x++ ) {
+					document.write("<td>")
+					if( y == x ) {
+						isi = [y];
+						document.write(gjl(isi));
+					} else if( y == range - (x + 1) ) {
+						isi = [x]
+						document.write(gnp(isi))
+					} else if( y < x && y < range - (x + 1)) {
+						document.write("A")
+					} else if( y > x && y > range - (x + 1)) {
+						document.write("B")
+					} else {
+						document.write("  ")
+					}
+					document.write("</td>");
+				}
+				document.write("<tr>");
+			}
+			document.write("</table>");
+
+			document.write("<br><br><br><br>")
+// Logic 3
+		// Logic 3.1
+			document.write("-----------------------------<br>");
+			document.write("&nbsp; Logic 3.1<br>");
+			document.write("-----------------------------<br>");
+			function fib(a) {
+				if( a <= 2 ) {
+					return 1;
+				} else {
+					return fib(a - 1) + fib(a - 2);
+				}
+			}
+
+			for( var y = 1; y < 10; y++) {
+				document.write(fib(y) + ", ")
+			}
+			document.write("<br><br>");
+		// Logic 3.1
+			document.write("-----------------------------<br>");
+			document.write("&nbsp; Logic 3.1<br>");
+			document.write("-----------------------------<br>");
+			function fib3(a) {
+				if( a <= 3 ) {
+					return 1;
+				} else {
+					return fib3(a - 1) + fib3(a - 2) + fib3(a - 3);
+				}
+			}
+
+			for( var y = 1; y < 10; y++) {
+				document.write(fib3(y) + ", ")
+			}
+</script>
+
+</html>
