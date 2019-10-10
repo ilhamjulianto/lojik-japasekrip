@@ -30,6 +30,30 @@ function soal1(range) {
 
 soal1(10);
 
+
+// Another Soal 1
+
+//SOAL 1
+function soal1(n) {
+  console.log('SOAL 1');
+  let a = []
+  for (let y = 1; y <= n; y++) {
+    a[y] = new Array(y);
+    for (let x = 1; x <= n; x++) {
+      if (y == x) {
+        a[y][x] = "*";
+      } else {
+        a[y][x] = "_";
+      }
+    }
+  }
+
+  console.log(a);
+  console.log('=============');
+}
+
+soal1(9);
+
 // -------------------
 // Soal 2
 // -------------------
