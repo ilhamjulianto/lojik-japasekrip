@@ -15,9 +15,9 @@ function soal1(range) {
 	var batas = range % 2 == 1 ? range : range - 1;
 	var isi = [];
 
-	for(var column = 0; column < batas; column++) {
+	for(var column = 0; column < batas; column = column + 1) {
 		isi[column] = [];
-		for(var row = 0; row < batas; row++) {
+		for(var row = 0; row < batas; row = row + 1) {
 			if( row == column ) {
 				isi[column][row] = '* ';
 			} else {
